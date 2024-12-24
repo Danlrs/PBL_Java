@@ -1,0 +1,11 @@
+aplication
+aplication.controller
+aplication.facade.CardTestFacade
+aplication.facade.CommentTestFacade
+aplication.facade.UserTestFacade
+aplication.filemanagement
+aplication.interfaces
+aplication.model
+aplication.view
+aplication.view.controller
+Testes.unitary.UserTest

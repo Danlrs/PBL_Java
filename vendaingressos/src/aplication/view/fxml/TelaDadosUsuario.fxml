@@ -1,0 +1,40 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplication.view.controller.TelaDadosUsuarioController" styleClass="root">
+    <top>
+        <!-- Container para os botões da parte superior -->
+        <HBox spacing="10" BorderPane.alignment="CENTER" style="-fx-padding: 10;">
+            <!-- Botões Voltar e Desconectar à esquerda -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button text="←" onAction="#voltarParaEventos" styleClass="botao-voltar"/>
+                <Button text="Desconectar" onAction="#desconectar" styleClass="botao"/>
+            </HBox>
+            <!-- Botão de Notificações à direita -->
+            <HBox spacing="10" alignment="CENTER_RIGHT">
+                <Button fx:id="botaoNotificacoes" text="🔔" onAction="#mostrarNotificacoes" styleClass="botao"/>
+            </HBox>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="20" alignment="CENTER" BorderPane.alignment="CENTER" style="-fx-padding: 20;">
+            <Label text="Dados do Usuário" styleClass="usuario-titulo"/>
+            <GridPane hgap="20" vgap="10" alignment="CENTER" styleClass="usuario-dados-container">
+                <Label fx:id="labelLogin" styleClass="usuario-label" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label fx:id="labelNome" styleClass="usuario-label" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="labelCpf" styleClass="usuario-label" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="labelEmail" styleClass="usuario-label" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            </GridPane>
+            <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+                <!-- Botão Minhas Compras à esquerda do Editar Dados -->
+                <Button text="Minhas Compras" onAction="#mostrarCompras" styleClass="botao"/>
+                <Button text="Editar Dados" onAction="#editarDados" styleClass="botao"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

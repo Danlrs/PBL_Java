@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact name="vendaingressos:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/vendaingressos_jar</output-path>
+    <root id="root">
+      <element id="archive" name="vendaingressos.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="vendaingressos" />
+      </element>
+      <element id="library" level="module" name="JUnit4" module-name="vendaingressos" />
+      <element id="library" level="project" name="google.code.gson" />
+      <element id="library" level="project" name="lib" />
+    </root>
+  </artifact>
+</component>

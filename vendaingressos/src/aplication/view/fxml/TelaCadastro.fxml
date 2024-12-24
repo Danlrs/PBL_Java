@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="aplication.view.controller.TelaCadastroController"
+            prefWidth="650" prefHeight="650" minWidth="650" minHeight="650">
+    <top>
+        <!-- Título e botão de voltar -->
+        <HBox spacing="10" alignment="CENTER" BorderPane.alignment="CENTER">
+            <Button text="←" onAction="#voltar" styleClass="botao-voltar"/>
+            <Label text="Cadastro de Usuário" styleClass="titulo"/>
+        </HBox>
+    </top>
+    <center>
+        <!-- Conteúdo central com alinhamento uniforme -->
+        <VBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER" maxWidth="650">
+            <!-- Campo Nome -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoNome" promptText="Nome (Ex.: João Silva)" styleClass="campo-texto" maxWidth="400"/>
+                <Label text=" " styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Campo E-mail -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoEmail" promptText="E-mail (Ex.: usuario@dominio.com)" styleClass="campo-texto" maxWidth="400" onKeyReleased="#validarEmail"/>
+                <Label fx:id="erroEmail" text="" styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Campo CPF -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoCpf" promptText="CPF (Ex.: 01234567890)" styleClass="campo-texto" maxWidth="400" onKeyReleased="#validarCpf"/>
+                <Label fx:id="erroCpf" text="" styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Campo Login -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoLogin" promptText="Login (Ex.: usuario123)" styleClass="campo-texto" maxWidth="400"/>
+                <Label text=" " styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Campo Senha -->
+            <VBox spacing="5" alignment="CENTER">
+                <PasswordField fx:id="campoSenha" promptText="Senha (Ex.: SuaSenha123)" styleClass="campo-texto" maxWidth="400"/>
+                <Label text=" " styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Checkbox Administrador -->
+            <VBox spacing="5" alignment="CENTER">
+                <CheckBox fx:id="checkAdmin" text="Administrador" styleClass="campo-texto"/>
+                <Label text=" " styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Botão Cadastrar -->
+            <VBox spacing="5" alignment="CENTER">
+                <Button text="Cadastrar" onAction="#cadastrar" styleClass="botao"/>
+                <!-- Label para mostrar a mensagem de erro abaixo do botão -->
+                <Label fx:id="erroCadastro" text="" styleClass="erro-label"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

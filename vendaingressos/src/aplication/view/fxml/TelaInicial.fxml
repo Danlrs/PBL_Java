@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="aplication.view.controller.TelaInicialController" minWidth="500" minHeight="600">
+    <center>
+        <VBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER" maxWidth="400">
+            <!-- "EVENTIX" e "LOGIN" agrupados próximos às caixas de texto -->
+            <Label text="TickIt" styleClass="logo"/>
+            <Label text="LOGIN" styleClass="titulo"/>
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoLogin" promptText="Login" styleClass="campo-texto" maxWidth="300"/>
+                <Label fx:id="erroLogin" text="" styleClass="erro-label"/>
+            </VBox>
+            <VBox spacing="5" alignment="CENTER">
+                <PasswordField fx:id="campoSenha" promptText="Senha" styleClass="campo-texto" maxWidth="300"/>
+                <Label fx:id="erroSenha" text="" styleClass="erro-label"/>
+            </VBox>
+            <Button text="Entrar" onAction="#entrar" styleClass="botao"/>
+            <Label text="Cadastrar-se" onMouseClicked="#abrirCadastro" styleClass="link"/>
+        </VBox>
+    </center>
+</BorderPane>

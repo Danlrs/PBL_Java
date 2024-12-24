@@ -1,0 +1,44 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplication.view.controller.TelaEditarUsuarioController" prefWidth="650" prefHeight="650">
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="←" onAction="#voltarParaDadosUsuario" styleClass="botao-voltar"/>
+            <Label text="Editar Dados" styleClass="titulo"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="10" maxWidth="650">
+
+            <!-- Campo Nome -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoNome" promptText="Nome" maxWidth="400" styleClass="campo-texto"/>
+                <Label fx:id="erroNome" text="" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo Login -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoLogin" promptText="Login" maxWidth="400" styleClass="campo-texto"/>
+                <Label fx:id="erroLogin" text="" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo E-mail -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoEmail" promptText="E-mail" maxWidth="400" styleClass="campo-texto"/>
+                <Label fx:id="erroEmail" text="" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo Senha -->
+            <VBox spacing="5" alignment="CENTER">
+                <PasswordField fx:id="campoSenha" promptText="Nova Senha" maxWidth="400" styleClass="campo-texto"/>
+                <Label fx:id="erroSenha" text="" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Botão Salvar -->
+            <Button text="Salvar Alterações" onAction="#salvarAlteracoes" styleClass="botao"/>
+        </VBox>
+    </center>
+</BorderPane>

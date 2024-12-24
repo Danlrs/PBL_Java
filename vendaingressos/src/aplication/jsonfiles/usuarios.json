@@ -1,0 +1,100 @@
+[
+  {
+    "id": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "login": "admin",
+    "senha": "admin",
+    "nome": "Administrador",
+    "cpf": "00000000000",
+    "email": "admin@adm.adm",
+    "admin": true,
+    "logado": false,
+    "ingressos": [
+      {
+        "id": "141d313d-20d9-4893-963c-2932dcc718d2",
+        "usuarioId": "86931c14-e319-4285-8c63-23d430fa44c5",
+        "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+        "preco": 200.0,
+        "assento": "A01",
+        "ativo": true
+      },
+      {
+        "id": "c984726c-c570-4c45-b747-b370beac2c07",
+        "usuarioId": "86931c14-e319-4285-8c63-23d430fa44c5",
+        "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+        "preco": 200.0,
+        "assento": "A02",
+        "ativo": true
+      },
+      {
+        "id": "d55b71ad-b032-4827-a4e1-031b21f765d0",
+        "usuarioId": "86931c14-e319-4285-8c63-23d430fa44c5",
+        "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+        "preco": 200.0,
+        "assento": "A03",
+        "ativo": true
+      }
+    ],
+    "cartoes": [],
+    "recibos": [
+      "Ingresso de ID: 141d313d-20d9-4893-963c-2932dcc718d2\nEvento: Show Roberto Carlos\nData: Tue Dec 24 22:00:00 GMT-03:00 2024\nAssento: A01\nPreço: 200.0\nMétodo de pagamento: Boleto\nID da transação: b78b8075-e7fe-4708-afb4-60f918f9f5fa",
+      "Ingresso de ID: c984726c-c570-4c45-b747-b370beac2c07\nEvento: Show Roberto Carlos\nData: Tue Dec 24 22:00:00 GMT-03:00 2024\nAssento: A02\nPreço: 200.0\nMétodo de pagamento: Boleto\nID da transação: 28ec1242-e3aa-4399-af9b-7fbeb9690229",
+      "Ingresso de ID: d55b71ad-b032-4827-a4e1-031b21f765d0\nEvento: Show Roberto Carlos\nData: Tue Dec 24 22:00:00 GMT-03:00 2024\nAssento: A03\nPreço: 200.0\nMétodo de pagamento: Boleto\nID da transação: 5836c91f-c949-4913-9de9-f5234ba51a53"
+    ]
+  },
+  {
+    "id": "0cd10720-af26-4ad3-b66c-f59f0b6cc500",
+    "login": "user",
+    "senha": "user",
+    "nome": "Usuário",
+    "cpf": "31231231415",
+    "email": "usuario@user.com",
+    "admin": false,
+    "logado": false,
+    "ingressos": [],
+    "cartoes": [],
+    "recibos": []
+  },
+  {
+    "id": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+    "login": "luan",
+    "senha": "123",
+    "nome": "Luan Barbosa",
+    "cpf": "39201022344",
+    "email": "Luan123@gmail.com",
+    "admin": false,
+    "logado": false,
+    "ingressos": [
+      {
+        "id": "73319f25-2e3e-4c0e-b665-70f16d5d595f",
+        "usuarioId": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+        "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+        "preco": 200.0,
+        "assento": "A20",
+        "ativo": false
+      },
+      {
+        "id": "fbd92034-cbf6-45f0-a45f-feaa97db840d",
+        "usuarioId": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+        "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+        "preco": 200.0,
+        "assento": "A21",
+        "ativo": true
+      }
+    ],
+    "cartoes": [
+      {
+        "id": "adabb308-fd4f-4bba-8098-99e96a7ffb45",
+        "idUsuario": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+        "nome": "Luan Barbosa",
+        "numero": "1234567890123456",
+        "dataValidade": "Dec 1, 2025, 12:00:00 AM",
+        "cvv": "123",
+        "ativo": true
+      }
+    ],
+    "recibos": [
+      "Ingresso de ID: 73319f25-2e3e-4c0e-b665-70f16d5d595f\nEvento: Show Roberto Carlos\nData: Tue Dec 24 22:00:00 GMT-03:00 2024\nAssento: A20\nPreço: 200.0\nMétodo de pagamento: Cartão\nID da transação: 3cbb5fc4-e0cf-4ad8-8245-935e61083789",
+      "Ingresso de ID: fbd92034-cbf6-45f0-a45f-feaa97db840d\nEvento: Show Roberto Carlos\nData: Tue Dec 24 22:00:00 GMT-03:00 2024\nAssento: A21\nPreço: 200.0\nMétodo de pagamento: Cartão\nID da transação: 4f85d58e-81a3-4c97-8862-b28284149d98"
+    ]
+  }
+]

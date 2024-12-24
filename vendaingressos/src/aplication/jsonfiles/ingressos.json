@@ -1,0 +1,42 @@
+[
+  {
+    "id": "73319f25-2e3e-4c0e-b665-70f16d5d595f",
+    "usuarioId": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+    "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "preco": 200.0,
+    "assento": "A20",
+    "ativo": false
+  },
+  {
+    "id": "fbd92034-cbf6-45f0-a45f-feaa97db840d",
+    "usuarioId": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+    "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "preco": 200.0,
+    "assento": "A21",
+    "ativo": true
+  },
+  {
+    "id": "141d313d-20d9-4893-963c-2932dcc718d2",
+    "usuarioId": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "preco": 200.0,
+    "assento": "A01",
+    "ativo": true
+  },
+  {
+    "id": "c984726c-c570-4c45-b747-b370beac2c07",
+    "usuarioId": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "preco": 200.0,
+    "assento": "A02",
+    "ativo": true
+  },
+  {
+    "id": "d55b71ad-b032-4827-a4e1-031b21f765d0",
+    "usuarioId": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "eventoId": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "preco": 200.0,
+    "assento": "A03",
+    "ativo": true
+  }
+]

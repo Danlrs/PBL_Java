@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="aplication.view.controller.TelaAdicionarEventoController"
+            prefWidth="800" prefHeight="600" minWidth="500" minHeight="600">
+    <top>
+        <!-- Título e botão de voltar -->
+        <HBox spacing="10" alignment="CENTER" BorderPane.alignment="CENTER">
+            <Button text="←" onAction="#voltar" styleClass="botao-voltar"/>
+            <Label text="Adicionar Evento" styleClass="titulo"/>
+        </HBox>
+    </top>
+    <center>
+        <!-- Conteúdo central com alinhamento uniforme -->
+        <VBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER" maxWidth="500">
+            <!-- Campo Nome do Evento -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoNome" promptText="Nome do Evento" styleClass="campo-texto" maxWidth="400"/>
+                <Label text=" " styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Campo Data -->
+            <VBox spacing="5" alignment="CENTER">
+                <DatePicker fx:id="campoData" promptText="Data (Ex.: 12/12/2024)" styleClass="campo-texto" maxWidth="400"/>
+                <Label fx:id="erroData" text="" styleClass="erro-label" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo Horário -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoHorario" promptText="Horário (Ex.: 14:30)" styleClass="campo-texto" maxWidth="400"/>
+                <Label fx:id="erroHorario" text="" styleClass="erro-label" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo Preço -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoPreco" promptText="Preço (Ex.: 50.00)" styleClass="campo-texto" maxWidth="400"/>
+                <Label fx:id="erroPreco" text="" styleClass="erro-label" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo Capacidade -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextField fx:id="campoCapacidade" promptText="Capacidade (Ex.: 100)" styleClass="campo-texto" maxWidth="400"/>
+                <Label fx:id="erroCapacidade" text="" styleClass="erro-label" style="-fx-text-fill: red;"/>
+            </VBox>
+
+            <!-- Campo Descrição -->
+            <VBox spacing="5" alignment="CENTER">
+                <TextArea fx:id="campoDescricao" promptText="Descrição do Evento" styleClass="campo-texto" maxWidth="400" prefRowCount="3"/>
+                <Label text=" " styleClass="erro-label"/>
+            </VBox>
+
+            <!-- Botão Cadastrar -->
+            <VBox spacing="5" alignment="CENTER">
+                <Button text="Cadastrar Evento" onAction="#cadastrarEvento" styleClass="botao"/>
+                <Label fx:id="erroCadastro" text=" " styleClass="erro-label"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

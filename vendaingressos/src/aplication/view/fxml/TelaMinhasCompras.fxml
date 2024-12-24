@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="aplication.view.controller.TelaMinhasComprasController">
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" BorderPane.alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="←" onAction="#voltar" styleClass="botao-voltar"/>
+            <Label text="Minhas Compras" styleClass="titulo-central"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <VBox fx:id="comprasContainer" spacing="10" alignment="CENTER" prefWidth="400">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

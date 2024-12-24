@@ -1,0 +1,249 @@
+/* Tema escuro para o fundo */
+.root {
+    -fx-base: #2c3e50; /* Cor de fundo principal */
+    -fx-background: #2c3e50; /* Cor de fundo do contêiner */
+    -fx-text-fill: #ecf0f1; /* Cor de texto clara para contraste */
+}
+
+.logo {
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d35400; /* Define a cor do texto para #d35400 */
+    -fx-alignment: center;
+}
+
+/* Estilo para o título */
+.titulo {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ecf0f1;
+    -fx-padding: 10;
+}
+
+/* Estilo para os campos de texto */
+.campo-texto {
+    -fx-background-color: #34495e; /* Fundo mais escuro para os campos */
+    -fx-border-color: #7f8c8d; /* Cor de borda mais suave */
+    -fx-border-radius: 5;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ecf0f1; /* Texto claro para contraste */
+}
+
+/* Estilo para os botões */
+.botao {
+    -fx-background-color: #e67e22; /* Tom alaranjado */
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.botao:hover {
+    -fx-background-color: #d35400; /* Tom alaranjado mais escuro para hover */
+}
+
+.botao-desativado {
+    -fx-background-color: #7f8c8d; /* Cor acinzentada */
+    -fx-text-fill: #bdc3c7; /* Texto mais claro */
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-size: 14px;
+    -fx-cursor: not-allowed; /* Cursor indicando que não pode ser clicado */
+}
+
+/* Estilo para o link (Label clicável) */
+.link {
+    -fx-font-size: 14px;
+    -fx-text-fill: #e67e22; /* Tom alaranjado claro */
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+.link:hover {
+    -fx-text-fill: #d35400; /* Tom alaranjado mais escuro para hover */
+    -fx-cursor: hand;
+}
+
+
+/* Botão de voltar com formato oval nas laterais */
+.botao-voltar {
+    -fx-background-color: #34495e; /* Fundo escuro */
+    -fx-text-fill: #e67e22; /* Cor do texto (seta) */
+    -fx-font-size: 40px; /* Tamanho maior da seta */
+    -fx-cursor: hand; /* Cursor de mão ao passar o mouse */
+    -fx-border-color: transparent; /* Sem borda visível */
+    -fx-background-radius: 20px; /* Curvatura nas laterais */
+    -fx-min-width: 50px; /* Largura mínima do botão */
+    -fx-pref-width: 50px; /* Largura preferencial fixada */
+    -fx-max-width: 50px; /* Largura máxima fixada */
+    -fx-min-height: 30px; /* Altura mínima do botão */
+    -fx-pref-height: 30px; /* Altura preferencial fixada */
+    -fx-max-height: 30px; /* Altura máxima fixada */
+    -fx-alignment: center; /* Centraliza o texto no botão */
+    -fx-padding: -30px 0; /* Sem preenchimento extra */
+}
+
+/* Estilo do botão ao passar o mouse */
+.botao-voltar:hover {
+    -fx-background-color: #2c3e50; /* Fundo um pouco mais claro ao passar o mouse */
+    -fx-text-fill: #d35400; /* Cor da seta laranja ao passar o mouse */
+}
+
+/* Estilo do botão primário */
+.botao-primario {
+    -fx-background-color: #34495e; /* Fundo escuro semelhante ao botão de voltar */
+    -fx-padding: 10; /* Espaçamento interno */
+    -fx-border-radius: 5; /* Bordas arredondadas */
+    -fx-background-radius: 5; /* Curvatura nas bordas */
+    -fx-font-size: 14px; /* Tamanho da fonte */
+    -fx-cursor: hand; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilo do botão primário ao passar o mouse */
+.botao-primario:hover {
+    -fx-background-color: #2c3e50; /* Fundo um pouco mais claro ao passar o mouse */
+}
+
+
+.evento-box {
+    -fx-background-color: #2c3e50;
+    -fx-border-color: #ecf0f1;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+}
+
+.usuario-label {
+    -fx-font-size: 16px; /* Aumenta o tamanho do texto */
+    -fx-font-weight: bold; /* Deixa o texto mais destacado */
+    -fx-text-fill: #ecf0f1; /* Usa uma cor clara para contraste */
+}
+
+.erro-label {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER;
+    -fx-min-height: 15px;
+}
+
+/* Estilo para o contêiner de dados do usuário */
+.usuario-dados-container {
+    -fx-padding: 20;
+    -fx-background-color: #34495e; /* Fundo mais escuro */
+    -fx-border-color: #7f8c8d; /* Cor de borda suave */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0); /* Sombra para destaque */
+}
+
+/* Estilo para o título na nova seção */
+.usuario-titulo {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e67e22; /* Tom alaranjado */
+    -fx-padding: 10;
+}
+
+
+.titulo-central {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ecf0f1;
+    -fx-alignment: center;
+}
+
+.assento {
+    -fx-background-color: #34495e;
+    -fx-text-fill: #ecf0f1;
+    -fx-padding: 10;
+    -fx-border-color: #7f8c8d;
+    -fx-border-radius: 5;
+    -fx-alignment: center;
+    -fx-min-width: 60px;
+    -fx-min-height: 40px;
+    -fx-cursor: hand;
+}
+
+.assento:hover {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: #ecf0f1;
+}
+
+.scroll-pane .thumb {
+    -fx-background-color: #d35400;
+}
+.scroll-pane .thumb:hover {
+    -fx-background-color: #e67e22;
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #e67e22;
+}
+.scroll-bar .increment-button:hover,
+.scroll-bar .decrement-button:hover {
+    -fx-background-color: #d35400;
+}
+
+.popup-notificacao {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 20px;
+    -fx-text-fill: #ecf0f1;
+}
+
+.link-selecionado {
+    -fx-text-fill: #d35400; /* Cor laranja para o texto selecionado */
+}
+
+.botao-estrela {
+    -fx-font-size: 20px;
+    -fx-text-fill: #bdc3c7; /* Cinza claro */
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.botao-estrela:hover {
+    -fx-text-fill: #d35400; /* Laranja escuro ao passar o mouse */
+}
+
+.estrela-selecionada {
+    -fx-text-fill: #e67e22; /* Laranja para estrelas selecionadas */
+}
+
+/* Estilo para estrelas de avaliação */
+.estrela {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.estrela:hover {
+    -fx-text-fill: #d35400; /* Destaca a estrela ao passar o mouse */
+}
+
+/* Ajuste do campo de texto de comentários */
+.campo-texto {
+    -fx-background-color: #34495e;
+    -fx-text-fill: #ecf0f1;
+    -fx-padding: 5;
+    -fx-border-color: #ecf0f1;
+    -fx-border-radius: 5;
+}
+
+/* Estilo do título 'Confirmar compra?' */
+.titulo-confirmacao {
+    -fx-font-size: 24px; /* Aumentando o tamanho da fonte */
+    -fx-font-weight: bold; /* Negrito */
+    -fx-alignment: center; /* Alinhamento central */
+    -fx-padding: 20px 0; /* Espaçamento interno */
+}
+
+/* Estilo para os dados da compra */
+.dados-compra {
+    -fx-font-size: 16px; /* Tamanho da fonte maior */
+    -fx-wrap-text: true; /* Quebra de linha automática */
+    -fx-padding: 10px 0; /* Espaçamento interno */
+}

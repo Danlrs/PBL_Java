@@ -1,0 +1,52 @@
+[
+  {
+    "id": "3cbb5fc4-e0cf-4ad8-8245-935e61083789",
+    "idUsuario": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+    "idEvento": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "idIngresso": "73319f25-2e3e-4c0e-b665-70f16d5d595f",
+    "idCartao": "adabb308-fd4f-4bba-8098-99e96a7ffb45",
+    "dataCompra": "Dec 16, 2024, 3:01:50 AM",
+    "preco": 200.0,
+    "metodoPagamento": "Cartão"
+  },
+  {
+    "id": "4f85d58e-81a3-4c97-8862-b28284149d98",
+    "idUsuario": "0a55965a-e98d-4d19-b2e2-2c49e3f19049",
+    "idEvento": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "idIngresso": "fbd92034-cbf6-45f0-a45f-feaa97db840d",
+    "idCartao": "adabb308-fd4f-4bba-8098-99e96a7ffb45",
+    "dataCompra": "Dec 16, 2024, 3:01:50 AM",
+    "preco": 200.0,
+    "metodoPagamento": "Cartão"
+  },
+  {
+    "id": "b78b8075-e7fe-4708-afb4-60f918f9f5fa",
+    "idUsuario": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "idEvento": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "idIngresso": "141d313d-20d9-4893-963c-2932dcc718d2",
+    "boleto": "fec896ec-4e8e-401b-9ab9-c20924d9827b",
+    "dataCompra": "Dec 16, 2024, 3:03:05 AM",
+    "preco": 200.0,
+    "metodoPagamento": "Boleto"
+  },
+  {
+    "id": "28ec1242-e3aa-4399-af9b-7fbeb9690229",
+    "idUsuario": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "idEvento": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "idIngresso": "c984726c-c570-4c45-b747-b370beac2c07",
+    "boleto": "fec896ec-4e8e-401b-9ab9-c20924d9827b",
+    "dataCompra": "Dec 16, 2024, 3:03:05 AM",
+    "preco": 200.0,
+    "metodoPagamento": "Boleto"
+  },
+  {
+    "id": "5836c91f-c949-4913-9de9-f5234ba51a53",
+    "idUsuario": "86931c14-e319-4285-8c63-23d430fa44c5",
+    "idEvento": "5d6510af-2bc7-4f18-9257-b0fed7cb79f6",
+    "idIngresso": "d55b71ad-b032-4827-a4e1-031b21f765d0",
+    "boleto": "fec896ec-4e8e-401b-9ab9-c20924d9827b",
+    "dataCompra": "Dec 16, 2024, 3:03:05 AM",
+    "preco": 200.0,
+    "metodoPagamento": "Boleto"
+  }
+]

@@ -1,0 +1,9 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplication.view.controller.TelaVerificarSenhaController" alignment="CENTER" spacing="10">
+    <Label text="Digite sua senha atual para continuar" styleClass="usuario-titulo"/>
+    <PasswordField fx:id="campoSenha" promptText="Senha atual" maxWidth="300"/>
+    <Label fx:id="erroSenha" text="" styleClass="erro-label"/>
+    <Button text="Confirmar" onAction="#verificarSenha" styleClass="botao"/>
+    <Button text="←" onAction="#cancelar" styleClass="botao-voltar"/>
+</VBox>
